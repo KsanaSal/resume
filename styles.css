@@ -1,0 +1,36 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Times New Roman", Times, serif;
+    line-height: 1.5;
+
+    --primary-text-color: #121215;
+    --secondary-text-color: #333336;
+    --durability-text-color: #4446499c;
+    --background-light-color: #f9f9f99c;
+    --icon-color: #626e7c;
+    --primary-dark-color: #09494b;
+    --primary-medium-color: #07a7ac;
+    --primary-light-color: #eefafb;
+    --secondary-dark-color: #6d2c07;
+    --secondary-medium-color: #fea002;
+    --secondary-light-color: #fef9f5;
+    --border-color: #ff9a0045;
+    --text-decoration-color: #ff9a00;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+}
