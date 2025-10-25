@@ -34,3 +34,16 @@ a {
 ul {
     list-style-type: none;
 }
+
+.resume {
+    margin: 50px auto;
+    border: 1px solid var(--primary-dark-color);
+    box-shadow: 1px 1px 7px 7px #f5f5f5;
+    max-width: 1200px;
+}
+
+.main {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
