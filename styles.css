@@ -6,22 +6,22 @@
 }
 
 body {
-    font-family: "Times New Roman", Times, serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, "Times New Roman", Times, serif;
     line-height: 1.5;
 
     --primary-text-color: #121215;
     --secondary-text-color: #333336;
     --durability-text-color: #4446499c;
     --background-light-color: #f9f9f99c;
-    --icon-color: #626e7c;
-    --primary-dark-color: #09494b;
-    --primary-medium-color: #07a7ac;
-    --primary-light-color: #eefafb;
-    --secondary-dark-color: #6d2c07;
-    --secondary-medium-color: #fea002;
-    --secondary-light-color: #fef9f5;
-    --border-color: #ff9a0045;
-    --text-decoration-color: #ff9a00;
+    --icon-color: #4d404a;
+    --primary-dark-color: #4b0944;
+    --primary-medium-color: #c810b6;
+    --primary-light-color: #fff4fe;
+    --secondary-dark-color: #215207;
+    --secondary-medium-color: #5adb14;
+    --secondary-light-color: #f7fff3;
+    --border-color: #80ff0045;
+    --text-decoration-color: #40ff00;
 }
 img {
     display: block;
@@ -37,13 +37,23 @@ ul {
 
 .resume {
     margin: 50px auto;
-    border: 1px solid var(--primary-dark-color);
+    border: 1px solid var(--primary-light-color);
+    border-radius: 10px;
     box-shadow: 1px 1px 7px 7px #f5f5f5;
     max-width: 1200px;
+    background-color: var(--secondary-light-color);
 }
 
 .main {
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-end;
+}
+
+.avatar {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    margin: 20px;
+    box-shadow: 1px 1px 7px 7px #f5f5f5;
 }
