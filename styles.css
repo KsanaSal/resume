@@ -6,7 +6,8 @@
 }
 
 body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, "Times New Roman", Times, serif;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-size: 16px;
     line-height: 1.5;
 
     --primary-text-color: #121215;
@@ -14,12 +15,13 @@ body {
     --durability-text-color: #4446499c;
     --background-light-color: #f9f9f99c;
     --icon-color: #4d404a;
-    --primary-dark-color: #4b0944;
+    --primary-dark-color: #56074e;
     --primary-medium-color: #c810b6;
     --primary-light-color: #fff4fe;
     --secondary-dark-color: #215207;
     --secondary-medium-color: #5adb14;
     --secondary-light-color: #f7fff3;
+    --accent-color: #ff9a00;
     --border-color: #80ff0045;
     --text-decoration-color: #40ff00;
 }
@@ -30,9 +32,18 @@ img {
 }
 a {
     text-decoration: none;
+    color: inherit;
 }
 ul {
     list-style-type: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--primary-text-color);
 }
 
 .resume {
@@ -41,19 +52,62 @@ ul {
     border-radius: 10px;
     box-shadow: 1px 1px 7px 7px #f5f5f5;
     max-width: 1200px;
+    padding: 30px 0;
     background-color: var(--secondary-light-color);
 }
 
-.main {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
+.container {
+    margin: 0 auto;
+    padding: 0 30px;
 }
 
+.section {
+    padding: 15px 10px 0 10px;
+    background-color: var(--primary-dark-color);
+    border-radius: 8px;
+}
+
+/* Hero styles */
+.hero-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
 .avatar {
-    width: 320px;
-    height: 320px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     margin: 20px;
-    box-shadow: 1px 1px 7px 7px #f5f5f5;
+    border: 5px solid var(--accent-color);
+}
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+.name {
+    color: var(--secondary-light-color);
+    text-decoration-color: var(--accent-color);
+    text-decoration-line: underline;
+    font-weight: 700;
+    font-size: 50px;
+}
+.profession {
+    color: var(--secondary-light-color);
+    font-weight: 500;
+    font-size: 30px;
+}
+.languages {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--secondary-light-color);
+    font-size: 20px;
+}
+.active {
+    color: var(--accent-color);
 }
