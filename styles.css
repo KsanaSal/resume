@@ -238,3 +238,64 @@ h6 {
     margin-left: 4px;
     font-weight: 500;
 }
+.work-link:hover {
+    text-decoration: underline;
+    color: var(--accent-color);
+}
+
+/* Projects styles */
+.projects {
+    border-bottom: 3px solid var(--secondary-dark-color);
+}
+.project-title {
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--primary-text-color);
+    text-decoration-color: var(--secondary-medium-color);
+    text-decoration-line: underline;
+    text-underline-offset: 4px;
+}
+.project-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.project-card {
+    max-width: 500px;
+    background: var(--primary-light-color);
+    padding: 24px;
+    border-radius: 8px;
+}
+.project-resource {
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--durability-text-color);
+}
+.project-list {
+    padding-left: 16px;
+    list-style: disc;
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--secondary-text-color);
+}
+.project-link {
+    display: inline-block;
+    color: var(--primary-medium-color);
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: transform 0.3s;
+}
+.project-link_color {
+    color: var(--secondary-medium-color);
+}
+.project-link:hover {
+    text-decoration: underline;
+    color: var(--accent-color);
+    transform: scale(1.1);
+}
+.project-role {
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--durability-text-color);
+}
