@@ -63,7 +63,6 @@ h6 {
 
 .section {
     padding: 16px 10px 16px 10px;
-    border-radius: 8px;
 }
 
 /* Hero styles */
@@ -100,7 +99,7 @@ h6 {
 .profession {
     color: var(--secondary-light-color);
     font-weight: 500;
-    font-size: 30px;
+    font-size: 36px;
 }
 .languages {
     display: flex;
@@ -132,17 +131,19 @@ h6 {
     justify-content: space-between;
     align-items: center;
 }
-.contents-list {
+.content-list {
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    gap: 40px;
     font-weight: 500;
     font-size: 20px;
 }
 .contacts-title {
     font-weight: 700;
-    font-size: 20px;
+    font-size: 30px;
     color: var(--primary-text-color);
+    text-decoration-color: var(--secondary-medium-color);
+    text-decoration-line: underline;
 }
 .contacts-list {
     display: flex;
@@ -165,4 +166,20 @@ h6 {
     fill: inherit;
     height: 24px;
     width: 24px;
+}
+
+/* About styles */
+.about {
+    border-bottom: 3px solid var(--secondary-dark-color);
+}
+.title {
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--primary-text-color);
+}
+.text {
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--secondary-text-color);
+    text-indent: 30px;
 }
